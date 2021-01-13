@@ -37,7 +37,7 @@ $mform = new edit();
 
 
 if ($mform->is_cancelled()) {
-    //retorna para a página manage.php
+    // Go back to manage.php page
     redirect($CFG->wwwroot . '/local/message/manage.php', 'You cancelled the message form');
 
 
@@ -57,3 +57,4 @@ if ($mform->is_cancelled()) {
 echo $OUTPUT->header();
 $mform->display();
 echo $OUTPUT->footer();
+

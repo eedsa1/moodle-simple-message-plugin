@@ -20,7 +20,6 @@
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
- //this is a hook
 function local_message_before_footer() {
     global $DB, $USER;
     $sql = "SELECT lm.id, lm.messagetext, lm.messagetype 
